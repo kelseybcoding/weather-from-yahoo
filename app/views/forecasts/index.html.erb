@@ -1,0 +1,9 @@
+<h1>Forecasts</h1>
+
+<% @forecasts["item"]["forecast"].each do |forecast| %>
+<p><%= forecast["date"] %></p>
+<p><%= forecast["day"] %></p>
+<p><%= forecast["high"] %></p>
+<p><%= forecast["low"] %></p>
+<p><%= forecast["text"] %></p>
+<% end %>
